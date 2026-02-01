@@ -1,0 +1,3 @@
+figure_name,sample_id_list,selection_rule
+fig_01_rgb_depth_mask_overlay_grid.png,ABEC_MM__53|ABEC_RM__44|BT_BM__75|FL_BM__74|FL_LM__24|FL_LM__3|HB_LM__39|HB_MM__51|HB_MM__52|HDCL_HW_A__70|HDCL_HW_B__59|HDCL_RM_B__40,4 best + 4 mid + 4 worst by alignment_error with deterministic ties
+fig_04_alignment_outliers_visual.png,FL_BM__74|HB_LM__39|ABEC_RM__44|HDCL_HW_A__70|BT_LM__67|BT_LM__68|HB_LM__86|FL_BM__60|FL_LM__84|HDCL_HW_A__40|MEB_HW_C__8|HDCL_HW_A__69|MEB_HW_C__48|HDCL_HW_A__39|HDCL_HW_A__41|HB_MM__69,top 16 worst alignment_error with deterministic ties

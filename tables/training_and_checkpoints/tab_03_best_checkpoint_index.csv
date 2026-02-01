@@ -1,0 +1,4 @@
+model,checkpoint_path,val_best_epoch,val_best_metric,seed
+baseline_a_rgb,/kaggle/working/results/04_training_baselines_and_vit_fusion/baseline_a_rgb/checkpoints/epoch_025.pt,25,0.9087344690373068,1337
+baseline_b_rgbd,/kaggle/working/results/04_training_baselines_and_vit_fusion/baseline_b_rgbd/checkpoints/epoch_028.pt,28,0.9468959381705836,1337
+proposed_vit_fusion,/kaggle/working/results/04_training_baselines_and_vit_fusion/proposed_vit_fusion/checkpoints/epoch_014.pt,14,0.9388025669675124,1337

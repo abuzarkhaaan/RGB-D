@@ -1,0 +1,8 @@
+step,modality,operation,parameters,rationale
+load,rgb,PIL_load_to_numpy_uint8,keep_first_3_channels,standardize channel layout
+load,depth,PIL_load_to_numpy,use_first_channel_if_multichannel,standardize depth as single channel
+load,mask,PIL_load_to_binary_uint8,mask=any(channel>0),standardize mask as binary
+align_shape,all,crop_to_min_common_hw,"h=min(h_rgb,h_depth,h_mask), w=min(w_rgb,w_depth,w_mask)",avoid shape mismatch failures
+resize,all,resize_to_target_hw,"target_hw=(422, 640), rgb=bilinear, depth=nearest, mask=nearest",consistent input size for all models
+depth_clean,depth,inpaint_invalid_depth,"invalid=(depth<=0 or nonfinite), method=TELEA, radius=3",reduce holes and stabilize gradients
+depth_scale,depth,robust_minmax_for_visualization,viz only: p1-p99 to uint8,paper figures and debugging

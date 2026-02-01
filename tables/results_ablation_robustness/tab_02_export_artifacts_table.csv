@@ -1,0 +1,5 @@
+artifact_name,format,path,file_size_mb,opset,quantized,notes
+checkpoint_best,pt,/kaggle/working/results/04_training_baselines_and_vit_fusion/proposed_vit_fusion/checkpoints/epoch_014.pt,205.72443675994873,,False,best checkpoint from phase4 index
+onnx_fp32,onnx,/kaggle/working/results/06_edge_and_final_ieee_package/artifacts/proposed_vit_fusion_fp32.onnx,68.66273975372314,17,False,"two-input onnx: rgb, depth"
+onnx_fp16,onnx,/kaggle/working/results/06_edge_and_final_ieee_package/artifacts/proposed_vit_fusion_fp16.onnx,34.41065502166748,17,False,exported from half model
+onnx_int8_dynamic,onnx,/kaggle/working/results/06_edge_and_final_ieee_package/artifacts/proposed_vit_fusion_int8_dynamic.onnx,,,False,not created: No module named 'onnxruntime'

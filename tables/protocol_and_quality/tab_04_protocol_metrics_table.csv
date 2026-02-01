@@ -1,0 +1,13 @@
+item,value
+leakage_control,site_disjoint_splits
+split_seed,1337
+split_fractions_by_site,"train=0.7, val=0.15, test=0.15"
+target_hw,"(422, 640)"
+mask_threshold,mask_binary_nonzero
+depth_invalid_definition,depth<=0 or nonfinite
+depth_hole_fill,inpaint_TELEA_radius3
+alignment_metric_reference,Phase2 alignment_error with tol_px=3
+primary_metrics,"IoU, Dice, Boundary_F1"
+aux_metrics,"MAE_depth_valid_ratio, outlier_rate"
+postprocessing,"keep_largest_component optional, threshold=0.5"
+threshold_policy,"fixed 0.5 for masks, report sensitivity in ablation"

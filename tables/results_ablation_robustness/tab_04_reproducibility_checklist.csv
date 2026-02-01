@@ -1,0 +1,9 @@
+item,status,details
+Dataset manifest and integrity logs available,ok,Phase 1 outputs directory present
+Sensor alignment metrics available,ok,Phase 2 outputs directory present
+Preprocess config and site split manifest available,ok,Phase 3 split manifest
+Best checkpoint index available,ok,Phase 4 checkpoint index
+Test metrics CSV source available,ok,Phase 5 full test results
+Edge profile CSV source available,ok,Phase 6 edge inference profile
+ONNX export available,ok,Phase 6 ONNX artifacts
+Final artifact index table available,ok,Phase 6 index CSV

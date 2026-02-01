@@ -1,0 +1,2 @@
+figure_name,sample_id_list,selection_rule
+fig_04_explainability_examples.png,ABEC_CM__0|ABEC_CM__1|ABEC_CM__10|ABEC_CM__11|ABEC_CM__12|ABEC_CM__13|ABEC_CM__14|ABEC_CM__15,phase2_ids_intersect_test_else_first8_test_sorted
