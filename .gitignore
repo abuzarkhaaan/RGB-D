@@ -1,0 +1,5 @@
+
+# ignore large archives
+*.zip
+archives/*.zip
+
